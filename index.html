@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hjerterum Forside | Hjerterum</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=“description” content=
+    "Her på forsiden vil det være muligt at bevæge sig rundt i navigationsbaren, til diverse 
+    hurtigt og nemt. Derudover vil der blive præsenteret kommende events, og en kort 
+    information om 'hvem Hjerterum er'.">
+    <meta name="keywords" content="">
+
+    <!-- Inserting icon -->
+    <link rel="shortcut icon" href="img/favicon.svg" type="img/favicon">
+    
+    <!-- Hosted by Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Linking to stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <header>
+        <div class="container">
+            <input type="checkbox" name="burgermenu" id="check">
+            
+            <div class="logo-container">
+                <a href="index.html"><img src="img/logo.svg" alt="Hjerterum Logo" class="logo"></a>
+            </div>
+
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="kalender.html">Event kalender</a>
+                        </li>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="medlemsside.html">Bliv medlem</a>
+                        </li>
+
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="#">Ydelser<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="#">Coaching</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Uddanelse</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Terapi</a>
+                                    </li>
+                                    </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="#">Book hjerterum<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="#">Ny underviser?</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Brug lokale</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="#">Om os<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="#">Kontakt</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Behandlere</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Undervisere</a>
+                                    </li>
+                                </ul>
+                             </div>
+                        </li>
+
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="#"></a>
+                            <div class="sprog">
+                                <div class="checkbox">
+                                    <input type="checkbox" class="check">
+                                </div>
+                                <span class="en">English</span> 
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="forside"> 
+            <!-- Forside bannerbillede -->
+            <img src="img/bannerforside.webp" alt="røgelse" class="banner">
+      
+             <!-- Grøn baggrundsboks -->
+            <article class="gronboks">
+      
+              <!-- Tekst og 'Læs mere' -->
+              <div class="tekstforside">
+                <input id="ch" type="checkbox">
+      
+                <!-- Tekst desktop version -->
+                <h1>Hvem er Hjerterum?</h1>
+                <p class="desktoptablettekst">Hjerterum er et stille rum i en hurtig og kaotisk verden.
+                  Vi kan ofte have en tendens til at leve fra hovedet og glemme vores krop, hjerte og sjæl, og hos os finder du ind til dig selv.
+                  Her kan du deltage i forskellige holistiske events såsom yoga, trommerejser, breathwork og meget mere. </p>
+                  
+                  <p class="desktoptekst">I Hjerterum er der ro og rum til fordybelse, så du kan opleve sandheden i dig selv.
+                    Velkommen i vores fælles Hjerterum.</p>
+                
+                  <!-- Tekst Mobil -->
+                <p class="pmobile">Holistiske events centralt i Aarhus.</p>
+                <div class="foldud">
+                  <p> Hjerterum er et stille rum i en hurtig og kaotisk verden. Vi kan ofte have en tendens til at leve fra hovedet og glemme vores krop, hjerte og sjæl, og hos os finder du ind til dig selv. Her kan du deltage i forskellige holistiske events såsom yoga, trommerejser, breathwork og meget mere.</p>
+                  <label for="ch">Vis mindre</label>
+                </div>
+                
+                <label for="ch">Læs mere</label>
+              </div>
+            
+              <!-- Forsideknapper -->
+            <div class="containerknapper"> 
+      
+                <div class="knap">
+                  <img src="img/eventkalender.webp" alt="stearinlys" class="knapbillede">
+                  <a href="kalender.html"><button>Event Kalender</button></a>
+                </div>
+      
+                <div class="knap">
+                  <img src="img/blivmedlem.webp" alt="kvinde" class="knapbillede">
+                  <a href="medlemsside.html"><button>Bliv Medlem</button></a>
+                </div>
+              </div>
+            </article>
+      
+            <!-- Kalender -->
+            <section class="kalender_">
+ 
+      
+                <!-- Alle events indeles ved hjælp af div med relevant info i h3,h4 og p -->
+         
+                <div class="dage_">
+         
+                  <!-- Dagens events (vises kun på mobil)  -->
+                  <h2 class="dagensevents_">Dagens Events</h2>
+        
+                  <div class="mandag_">
+        
+                    <h2>Mandag 20/11</h2>
+         
+                      <div class="yoga_">
+                        <div class="tekst_">
+                        <h3> 10:00-11:30</h3>
+                        <h4>Kundalini Yoga</h4>
+                        <p>med Trille Flora</p>
+                       </div>
+                      </div>
+         
+                      <div class="musik_">
+                        <div class="tekst_">
+                        <h3> 16:30-17:30</h3>
+                        <h4>Shaking & Trommerejse</h4>
+                        <p> med Ocean </p>
+                       </div>
+                      </div>
+         
+                      <div class="meditation_">
+                        <div class="tekst_">
+                        <h3> 19:00-21:00</h3>
+                        <h4>Kirtan</h4>
+                        <p> med Sita & Peter </p>
+                       </div>
+                      </div>
+         
+                  </div>
+         
+         
+                  <div class="tirsdag_">
+         
+                    <h2>Tirsdag 21/11</h2>
+         
+                      <div class="yoga_">
+                        <h3> 11:30-13:00</h3>
+                        <h4>Kundalini Yoga</h4>
+                        <p> med Karitas </p>
+                      </div>
+         
+                      <div class="yoga_">
+                        <h3> 16:00-17:30</h3>
+                        <h4>Tirsdags Yoga</h4>
+                        <p> med Noah</p>
+                      </div>
+         
+                      <div class="cafe_">
+                        <h3> 19:00-21:00</h3>
+                        <h4>40+ fællesskab</h4>
+                        <p> med Bernadette </p>
+                      </div>
+         
+                  </div>
+         
+                  <div class="onsdag_">
+         
+                    <h2>Onsdag 22/11</h2>
+         
+                      <div class="meditation_">
+                        <h3> 11:30-13:00</h3>
+                        <h4>Mama stå stærkt </h4>
+                        <p>med Annemarie Vos</p>
+                      </div>
+         
+                      <div class="forlob_">
+                        <h3> 16:00-18:00</h3>
+                        <h4>TRE Gruppeforløb 1:4 </h4>
+                        <p> med Maria Fich </p>
+                      </div>
+         
+                      <div class="meditation_">
+                        <h3> 19:00-21:15</h3>
+                        <h4>Source Breathwork</h4>
+                        <p> med Douglas Crawford </p>
+                      </div>
+         
+                  </div>
+         
+                  <div class="torsdag_">
+         
+                    <h2>Torsdag 23/11</h2>
+         
+                      <div class="meditation_">
+                        <h3> 11:00-12:00</h3>
+                        <h4>Meditation</h4>
+                        <p> med Kasper </p>
+                      </div>
+         
+                      <div class="cafe_">
+                        <h3> 13:30-17:30</h3>
+                        <h4>Café Hjerterum</h4>
+                        <p> For medlemmer </p>
+                      </div>
+         
+                      <div class="dans_">
+                        <h3> 18:00-20:30</h3>
+                        <h4>Womb Awekening</h4>
+                        <p> med Zoe Bjerregaard </p>
+                      </div>
+         
+                  </div>
+         
+         
+                  <div class="fredag_">
+         
+                    <h2>Fredag 24/11</h2>
+         
+                      <div class="cafe_">
+                        <h3> 20:00-23:00</h3>
+                        <h4>Fredag med kildefryd</h4>
+                        <p> med Carsten Bruun </p>
+                      </div>
+         
+                    
+                  </div>
+         
+                  <div class="lordag_">
+         
+                    <h2>Lørdag 25/11</h2>
+         
+                      <div class="yoga_">
+                        <h3> 10:00-13:00</h3>
+                        <h4>Yin Yoga & Cacao</h4>
+                        <p> med Ivana Petersen </p>
+                      </div>
+         
+                      <div class="musik_">
+                        <h3> 19:00-21:30</h3>
+                        <h4>Divine feminine </h4>
+                        <p> med Ayiana Rose </p>
+                      </div>
+        
+                      <div class="fake_">
+                        <h3> 19:00-21:30</h3>
+                        <h3> 19:00-21:30</h3>
+                        <h3> 19:00-21:30</h3>
+                        <h3> 19:00-21:30</h3>
+                        <h4>Divine feminine </h4>
+                        <h4>Divine feminine </h4>
+                        <p> med Ayiana Rose </p>
+                      </div>
+         
+                  </div>
+         
+                  <div class="sondag_">
+         
+                    <h2>Søndag 26/11</h2>
+         
+                      <div class="forlob_">
+                        <h3> 10:00-17:00</h3>
+                        <h4>Vejen Hjem </h4>
+                        <p> med Linemai Izolde </p>
+                      </div>
+         
+         
+                      <div class="musik_">
+                        <h3> 19:00-21:00</h3>
+                        <h4>Voice Liberation</h4>
+                        <p> med Aurora & Mariam</p>
+                      </div>
+        
+                      <div class="fake_">
+                        <h3> 19:00-21:30</h3>
+                        <h3> 19:00-21:30</h3>
+                        <h3> 19:00-21:30</h3>
+                        <h3> 19:00-21:30</h3>
+                        <h4>Divine feminine </h4>
+                        <h4>Divine feminine </h4>
+                        <p> med Ayiana Rose </p>
+                      </div>
+         
+                  </div>
+         
+         
+                </div>
+                <!-- Afsluttende div på "dage" i kalenderen -->
+         
+              </section>
+              <!-- Afslutning af selve kalenderen -->
+           
+          </div>
+    </main>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=hjerterum@holistisk.org"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.facebook.com/hjerterumaarhus/followers"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/hjerterum_aarhus/"><i class="fab fa-instagram"></i></a>
+        </div>
+        <!-- Her slutter vores sociale medier -->
+        <p class="adresse">Guldsmedgade 26 b, st.,8000 Aarhus C</p>
+        <ul>
+            <li><a href="#">Donation</a></li>
+            <li><a href="#">Om os</a></li>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+        <!-- Slut ul -->
+       
+    </footer>
+
+</body>
+
+</html>

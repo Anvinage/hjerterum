@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Event Kalender | Hjerterum</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=“description” content=
+    " Her på siden er det muligt, at få et overblik over hvilke events der bliver afholdt i Hjerterum. 
+    Derudover er alt den nødvendige information til events lavet som popup. Alt information om pris, 
+    tidspunkt, og underviser står i en popup besked når man trykker på et event man gerne vil se mere om ">
+    <meta name="keywords" content="">
+
+    <!-- Inserting icon -->
+    <link rel="shortcut icon" href="img/favicon.svg" type="img/favicon">
+
+    <!-- Linking to Google fonts by Jeremy Tribby -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap">
+    
+    <!-- Hosted by Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Linking to stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+      <header class="container">
+          <input type="checkbox" name="burgermenu" id="check">
+          
+          <div class="logo-container">
+            <a href="index.html"><img src="img/logo.svg" alt="Hjerterum Logo" class="logo"></a>
+          </div>
+
+          <div class="nav-btn">
+              <div class="nav-links">
+                  <ul>
+                      <li class="nav-link" style="--i: .6s">
+                          <a href="kalender.html">Event kalender</a>
+                      </li>
+                      <li class="nav-link" style="--i: .6s">
+                          <a href="medlemsside.html">Bliv medlem</a>
+                      </li>
+
+                      <li class="nav-link" style="--i: .85s">
+                          <a href="#">Ydelser<i class="fas fa-caret-down"></i></a>
+                          <div class="dropdown">
+                              <ul>
+                                  <li class="dropdown-link">
+                                      <a href="#">Coaching</a>
+                                  </li>
+                                  <li class="dropdown-link">
+                                      <a href="#">Uddanelse</a>
+                                  </li>
+                                  <li class="dropdown-link">
+                                      <a href="#">Terapi</a>
+                                  </li>
+                                  </ul>
+                          </div>
+                      </li>
+
+                      <li class="nav-link" style="--i: .85s">
+                          <a href="#">Book hjerterum<i class="fas fa-caret-down"></i></a>
+                          <div class="dropdown">
+                              <ul>
+                                  <li class="dropdown-link">
+                                      <a href="#">Ny underviser?</a>
+                                  </li>
+                                  <li class="dropdown-link">
+                                      <a href="#">Brug lokale</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </li>
+
+                      <li class="nav-link" style="--i: .85s">
+                          <a href="#">Om os<i class="fas fa-caret-down"></i></a>
+                          <div class="dropdown">
+                              <ul>
+                                  <li class="dropdown-link">
+                                      <a href="#">Kontakt</a>
+                                  </li>
+                                  <li class="dropdown-link">
+                                      <a href="#">Behandlere</a>
+                                  </li>
+                                  <li class="dropdown-link">
+                                      <a href="#">Undervisere</a>
+                                  </li>
+                              </ul>
+                           </div>
+                      </li>
+
+                      <li class="nav-link" style="--i: .85s">
+                          <a href="#"></a>
+                          <div class="sprog">
+                              <div class="checkbox">
+                                  <input type="checkbox" class="check">
+                              </div>
+                              <span class="en">English</span> 
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+
+            </div>
+
+            <div class="hamburger-menu-container">
+              <div class="hamburger-menu">
+                  <div></div>
+              </div>
+          </div>
+
+        </header>
+    <!-- Kalender site med H1 -->
+
+    <div class="kalender-site">
+
+      <!-- For at lave valg af uge og valg af kategori er der lavet to buttons. Hver button har fået en drop-down menu der først kommer frem ved klik-->
+
+        <div class="kalender-knapper">
+
+          <div class="dropdown-uge"> 
+
+            <button class="uge-knap"> Vælg Uge: 47</button>
+            <div class="dropdown-content-uge">
+              <a href="">Nuværende</a>
+              <a href="">Uge 48</a>
+              <a href="">Uge 49</a>
+              <a href="">Uge 50</a>
+              <a href="">Uge 51</a>
+              <a href="">Uge 52</a>
+              <a href="">Vis flere</a> </div>
+          </div>
+
+          <div class="dropdown-kategori"> 
+
+            <button class="kategori-knap"> Vælg Kategori </button> 
+            <div class="dropdown-content-kategori">
+              <a href="#">Vælg alle</a>
+              <a href="#" class="cafe1">Cafe & Forum</a>
+              <a href="#" class="dans1">Dans</a>
+              <a href="#" class="forlob1">Forløb</a>
+              <a href="#" class="meditation1">Meditation</a>
+              <a href="#" class="musik1">Musik & Sang</a>
+              <a href="#" class="yoga1">Yoga</a> </div>
+          </div>
+
+        </div>
+        
+      <!-- Selve kalenderdelen opbygges ved brug af CSS grid, så derfor laves der en masse div elementer med tekst i. Der er bevidst fravalgt at 
+        lave den i tabel form i html, da vores kalender design ikke matcher helt traditionelt design i responsive form  -->
+
+    
+      <section class="kalender"> 
+
+        <!-- Alle events indeles ved hjælp af div med relevant info i h3,h4 og p -->
+
+        <div class="dage">
+
+          <div class="mandag"> 
+
+            <h2>Mandag 20/11</h2>
+
+              <div class="yoga"> 
+                <h3> 10:00-11:30</h3>
+                <h4>Kundalini Yoga</h4>
+                <p>med Trille Flora</p>
+              </div>
+
+              <div class="musik"> 
+                <h3> 16:30-17:30</h3>
+                <h4>Shaking & Trommerejse</h4>
+                <p> med Ocean </p>
+              </div>
+
+              <div class="meditation"> 
+                <h3> 19:00-21:00</h3>
+                <h4>Kirtan</h4>
+                <p> med Sita & Peter </p>
+              </div>
+
+          </div>
+
+          <div class="tirsdag">
+
+            <h2>Tirsdag 21/11</h2>
+
+              <div class="yoga"> 
+                <h3> 11:30-13:00</h3>
+                <h4>Kundalini Yoga</h4>
+                <p> med Karitas </p>
+              </div>
+
+              <div class="yoga"> 
+                <h3> 16:00-17:30</h3>
+                <h4>Tirsdags Yoga</h4>
+                <p> med Noah</p>
+              </div>
+
+              <div class="cafe"> 
+                <h3> 19:00-21:00</h3>
+                <h4>40+ fællesskab</h4>
+                <p> med Bernadette </p>
+              </div>
+
+          </div>
+
+          <div class="onsdag"> 
+
+            <h2>Onsdag 22/11</h2>
+
+              <div class="meditation"> 
+                <h3> 11:30-13:00</h3>
+                <h4>Mama stå stærkt </h4>
+                <p>med Annemarie Vos</p>
+              </div>
+
+              <div class="forlob"> 
+                <h3> 16:00-18:00</h3>
+                <h4>TRE Gruppeforløb 1:4 </h4>
+                <p> med Maria Fich </p>
+              </div>
+
+              <div class="meditation"> 
+                <h3> 19:00-21:15</h3>
+                <h4>Source Breathwork</h4>
+                <p> med Douglas Crawford </p>
+              </div>
+
+          </div>
+
+          <div class="torsdag">
+
+            <h2>Torsdag 23/11</h2>
+
+              <div class="meditation"> 
+                <h3> 11:00-12:00</h3>
+                <h4>Meditation</h4>
+                <p> med Kasper </p>
+              </div>
+
+              <div class="cafe"> 
+                <h3> 13:30-17:30</h3>
+                <h4>Café Hjerterum</h4>
+                <p> For medlemmer </p>
+              </div>
+
+              <div class="dans"> 
+                <h3> 18:00-20:30</h3>
+                <h4>Womb Awekening</h4>
+                <p> med Zoe Bjerregaard </p>
+              </div>
+
+          </div>
+
+
+          <div class="fredag">
+
+            <h2>Fredag 24/11</h2>
+
+              <div class="cafe"> 
+                <h3> 20:00-23:00</h3>
+                <h4>Fredag med kildefryd</h4>
+                <p> med Carsten Bruun </p>
+              </div>
+
+            
+          </div>
+
+          <div class="lordag"> 
+
+            <h2>Lørdag 25/11</h2>
+
+              <div class="yoga"> 
+                <h3> 10:00-13:00</h3>
+                <h4>Yin Yoga & Cacao</h4>
+                <p> med Ivana Petersen </p>
+              </div>
+
+              <div class="musik"> 
+                <h3> 19:00-21:30</h3>
+                <h4>Divine feminine </h4>
+                <p> med Ayiana Rose </p>
+              </div>
+
+          </div>
+
+          <div class="sondag">
+
+            <h2>Søndag 26/11</h2>
+
+              <div class="forlob"> 
+                <h3> 10:00-17:00</h3>
+                <h4>Vejen Hjem </h4>
+                <p> med Linemai Izolde </p>
+              </div>
+
+
+              <div class="musik"> 
+                <h3> 19:00-21:00</h3>
+                <h4>Voice Liberation</h4>
+                <p> med Aurora & Mariam</p>
+              </div>
+
+          </div>
+
+
+        </div> 
+        <!-- Afsluttende div på "dage" i kalenderen -->
+
+      </section>
+      <!-- Afslutning af selve kalenderen -->
+
+    </div>
+
+    <footer class="footer">
+      <div class="social">
+          <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=hjerterum@holistisk.org"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.facebook.com/hjerterumaarhus/followers"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/hjerterum_aarhus/"><i class="fab fa-instagram"></i></a>
+      </div>
+      <!-- Her slutter vores sociale medier -->
+      <p class="adresse">Guldsmedgade 26 b, st.,8000 Aarhus C</p>
+      <ul>
+          <li><a href="#">Donation</a></li>
+          <li><a href="#">Om os</a></li>
+          <li><a href="#">Vision</a></li>
+          <li><a href="#">Login</a></li>
+      </ul>
+      <!-- Slut ul -->
+     
+  </footer>
+
+
+  </body>
